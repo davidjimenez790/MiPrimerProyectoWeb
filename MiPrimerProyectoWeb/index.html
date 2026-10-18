@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi primer proyecto web sobre tecnología: herramientas del desarrollo web.">
+  <title>Mi Primer Proyecto Web | Herramientas de Desarrollo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <span class="brand">&lt;/&gt; MiPrimerProyectoWeb</span>
+      <a href="#herramientas">Herramientas</a>
+    </nav>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="badge">Ingeniería Web · HTML5</p>
+        <h1>Mi Primer Proyecto Web</h1>
+        <p class="lead">
+          Desarrollar una aplicación web requiere un editor para escribir el código, un navegador para
+          verlo, un servidor local para probarlo y herramientas para encontrar errores.
+        </p>
+        <a class="btn" href="#herramientas">Ver mi entorno</a>
+        <a class="btn btn-ghost" href="https://developer.mozilla.org/es/docs/Learn" target="_blank" rel="noopener">Aprender en MDN</a>
+      </div>
+      <img src="img/logo.svg" alt="Ilustración de una ventana de editor con código HTML">
+    </div>
+  </header>
+
+  <main>
+    <section id="herramientas" class="content">
+      <h2>Mi entorno de trabajo</h2>
+      <p class="section-sub">Las cuatro herramientas que uso para desarrollar.</p>
+      <div class="cards">
+        <a class="card" href="https://code.visualstudio.com/" target="_blank" rel="noopener"><span class="icon">📝</span><h3>Visual Studio Code</h3><p>Editor de código con resaltado de sintaxis, autocompletado y extensiones.</p><span class="more">Abrir sitio ↗</span></a>
+        <a class="card" href="https://developer.chrome.com/docs/devtools" target="_blank" rel="noopener"><span class="icon">🌐</span><h3>Google Chrome</h3><p>Navegador donde se visualiza la página, con DevTools para depurar.</p><span class="more">Abrir sitio ↗</span></a>
+        <a class="card" href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" rel="noopener"><span class="icon">⚡</span><h3>Live Server</h3><p>Servidor local que recarga la página automáticamente al guardar.</p><span class="more">Abrir sitio ↗</span></a>
+        <a class="card" href="https://github.com/" target="_blank" rel="noopener"><span class="icon">🔀</span><h3>Git y GitHub</h3><p>Control de versiones para guardar el historial y respaldar el proyecto.</p><span class="more">Abrir sitio ↗</span></a>
+      </div>
+    </section>
+
+    <section class="content test">
+      <h2>Probar JavaScript</h2>
+      <p>Presiona el botón para comprobar que el archivo <code>js/main.js</code> está conectado.</p>
+      <button id="btnMensaje" type="button">Probar JavaScript</button>
+      <p id="mensaje" class="msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="anio">2026</span> – Angel David Jimenez Rios – Ingeniería Web</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
